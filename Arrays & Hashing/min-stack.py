@@ -1,5 +1,5 @@
 #https://leetcode.com/problems/min-stack/
-Class MinStack:
+class MinStack:
 
     def __init__(self):
         self.data = []
