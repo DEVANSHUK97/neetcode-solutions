@@ -9,9 +9,9 @@ class Solution:
                 return True
             elif matrix[vert_mid][0] < target:
                 vert_l = vert_mid + 1
-            else:# matrix[vert_mid][0] > target:
+            else:  # matrix[vert_mid][0] > target:
                 vert_h = vert_mid - 1
-        
+
         hrzn_l = 0
         hrzn_h = len(matrix[0]) - 1
 
@@ -22,10 +22,7 @@ class Solution:
                 return True
             elif target > matrix[vert_h][hrzn_mid]:
                 hrzn_l = hrzn_mid + 1
-            else:#target < matrix[vert_h][hrzn_mid]:
+            else:  # target < matrix[vert_h][hrzn_mid]:
                 hrzn_h = hrzn_mid - 1
-            
-        return False
-            
 
-            
+        return False
